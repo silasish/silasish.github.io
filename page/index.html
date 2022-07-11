@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loading...</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Eaglercraft is real Minecraft 1.5.2 that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. You can join real Minecraft 1.5.2 servers with it through a custom proxy based on Bungeecord." />
+<meta name="keywords" content="minecraft, applet, chromebook, lax1dude, games, eaglercraft, eagler" />
+<meta name="author" content="LAX1DUDE" />
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css"/> 
+<meta property="og:title" content="Eaglercraft" />
+<meta property="og:locale" content="en-US" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://media.discordapp.net/attachments/378764518081429506/932053915061587978/thumbnail2.png" />
+<meta property="og:description" content="Eaglercraft is real Minecraft 1.5.2 that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. You can join real Minecraft 1.5.2 servers with it through a custom proxy based on Bungeecord." />
+<!-- Change this: <meta property="og:url" content="https://gnome.vercel.app/" /> -->
+<style>
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+</style>
+<script type="text/javascript" src="classes.js"></script>
+<script type="text/javascript">
+	const splashTexts = ["Look ma, I setup a Linux server!", "love you all (platonically)", "have fun ig", "Hours wasted here: 165", "print('Hello world!')"]
+	document.title = splashTexts[Math.floor(Math.random()*splashTexts.length)];
+	setTimeout(function(){
+		document.getElementById("urwelcome").remove()
+	}, 15000)
+</script>
+<script type="text/javascript">
+if(document.location.href.startsWith("file:")) {
+console.log("You're not supposed to 'open' this file in your browser. Please upload this folder to your HTTP(s) server and access it via the internet. This is not a bug, please read the documentation");
+}else {
+window.addEventListener("load", function(){
+window.minecraftOpts = [
+"game_frame","assets.epk",
+btoa(atob("CgAACQAHc2VydmVycwoAAAABCAAKZm9yY2VkTU9URABtb3RkaGVyZQEAC2hpZGVBZGRyZXNzAQgAAmlwAGlwaGVyZQgABG5hbWUAbmFtZWhlcmUAAA==").replace("motdhere",String.fromCharCode(`ishue`.length)+`ishue`).replace("namehere",String.fromCharCode(`JOIN HERE`.length)+`JOIN HERE`).replace("iphere",String.fromCharCode(("ws://story-accomplish.at.playit.gg:49091/").length)+("ws://story-accomplish.at.playit.gg:49091/")))
+];
+(function(){
+var q = window.location.search;
+if(typeof q === 'string' && q.startsWith("?")) {
+	q = new URLSearchParams(q);
+	var s = q.get("server");
+	if(s) window.minecraftOpts.push(s);
+}
+})();
+main();
+});}
+</script>
+</head>
+<h1 id="urwelcome" style="margin:0px;font-family: 'MinecraftiaRegular';color:white;mix-blend-mode: difference;position:fixed;top:5px;left:5px;z-index:2147483647;font-size: 24px;">You're welcome nerds! /j</h1>
+<body style="margin:0px;width:100vw;height:99.5vh;" id="game_frame">
+</body>
+</html>
