@@ -35,6 +35,10 @@ body {
 </style>
 <script type="text/javascript" src="classes.js"></script>
 <script type="text/javascript">
+	if (window.location.href.indexOf("https://") == 0) {
+	  window.location.href = "http://www.silasish.tk/page"
+	}
+	
 	const splashTexts = ["Look ma, I setup a Linux server!", "love you all (platonically)", "have fun ig", "Hours wasted here: 165", "print('Hello world!')"]
 	document.title = splashTexts[Math.floor(Math.random()*splashTexts.length)];
 	setTimeout(function(){
